@@ -42,7 +42,7 @@ async def on_message(message):
                 while True:
                         k += 1
                         print("Try: ", k)
-                        if(k > 720): # Timeout after 5 minutes
+                        if(k > 20): # Terminate after 1 hour
                             await message.channel.send(f'Timeout')
                             print("Timeout")
                             break 
